@@ -1,0 +1,20 @@
+{
+    "project_name": "New Project",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "main_scene_type": [
+        "Control",
+        "Node2D",
+        "Spatial",
+        "Node"
+    ],
+    "game_scene_type": [
+        "Node",
+        "Node2D",
+        "Spatial",
+        "Control"
+    ],
+    "gdnative_libs": ["yes", "no"],
+    "gut": ["yes", "no"],
+    "wat": ["yes", "no"],
+    "prototype_textures": ["yes", "no"]
+}
