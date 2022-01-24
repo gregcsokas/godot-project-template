@@ -6,7 +6,7 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 {%- if cookiecutter.godot_4_project == "yes" -%}
-config_version=4
+config_version=5
 {%- else -%}
 config_version=4
 {% endif %}
