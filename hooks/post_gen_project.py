@@ -10,3 +10,7 @@ if user_answers["gdnative_libs"] != "yes":
     if directory_path.exists() and directory_path.is_dir():
         shutil.rmtree(directory_path)
 
+if user_answers["godot_4_project"] != "yes":
+    directory_path = Path().cwd() / '.godot'
+    if directory_path.exists() and directory_path.is_dir():
+        shutil.rmtree(directory_path)

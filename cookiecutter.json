@@ -1,6 +1,7 @@
 {
     "project_name": "New Project",
     "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "godot_4_project": ["yes", "no"],
     "main_scene_type": [
         "Control",
         "Node2D",
@@ -13,8 +14,5 @@
         "Spatial",
         "Control"
     ],
-    "gdnative_libs": ["yes", "no"],
-    "gut": ["yes", "no"],
-    "wat": ["yes", "no"],
-    "prototype_textures": ["yes", "no"]
+    "gdnative_libs": ["yes", "no"]
 }

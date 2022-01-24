@@ -5,7 +5,9 @@
 ; Format:
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
-
+{% if godot_4_project == "yes" %}
+config_version=4
+{% else %}
 config_version=4
 
 
@@ -13,7 +15,9 @@ config_version=4
 
 config/name="{{ cookiecutter.project_slug }}"
 config/icon="res://icon.png"
-
+{% if godot_4_project == "yes" %}
+config/features=PackedStringArray("4.0", "Vulkan Clustered")
+{% endif %}
 
 [physics]
 
