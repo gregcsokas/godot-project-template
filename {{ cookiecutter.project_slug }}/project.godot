@@ -14,7 +14,7 @@ config_version=4
 
 [application]
 
-config/name="{{ cookiecutter.project_slug }}"
+config/name="{{ cookiecutter.project_name }}"
 config/icon="res://icon.png"
 {% if cookiecutter.godot_4_project == "yes" %}
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
