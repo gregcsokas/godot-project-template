@@ -5,13 +5,13 @@
     "main_scene_type": [
         "Control",
         "Node2D",
-        "Spatial",
+        "Node3D",
         "Node"
     ],
     "game_scene_type": [
         "Node",
         "Node2D",
-        "Spatial",
+        "Node3D",
         "Control"
     ],
     "gdnative_libs": ["yes", "no"]
