@@ -5,26 +5,15 @@
 ; Format:
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
-{% if cookiecutter.godot_4_project == "yes" %}
-config_version=5
-{%- else -%}
-config_version=4
-{% endif %}
 
+config_version=5
 
 [application]
 
 config/name="{{ cookiecutter.project_name }}"
 config/icon="res://icon.png"
-{% if cookiecutter.godot_4_project == "yes" %}
+{% if cookiecutter.project_for_mobile == "no" %}
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
+{% elif%}
+config/features=PackedStringArray("4.0", "Vulkan Mobile")
 {% endif %}
-
-[physics]
-
-common/enable_pause_aware_picking=true
-
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
