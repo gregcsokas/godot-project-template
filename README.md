@@ -12,7 +12,7 @@ Currently only supports Godot 4.0
 - answer the questions in the console
 - start making games
 
-## The generate project will looks like this:
+## The generated project will look like this:
 <pre>├── <font color="#12488B"><b>project-name</b></font>
 │   ├── <font color="#12488B"><b>addons</b></font>
 │   ├── <font color="#12488B"><b>assets</b></font>
